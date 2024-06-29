@@ -1,0 +1,38 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+}
+
+.deletedBtn {
+    
+}
+
+.customBtn {
+    border-radius: 8px;
+    background-color: #efefef;
+    border: 1px solid #000000;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border 0.25s, background-color 0.25s;
+    outline: none;
+    &:active,
+    &:hover,
+    &:focus {
+        border: 1px solid #000000;
+        background-color: #aeacac;
+    }
+
+    &:focus:not(:active) {
+        border: 1px solid #000000;
+        background-color: #fff;
+    }
+}
